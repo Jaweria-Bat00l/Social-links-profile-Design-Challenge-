@@ -1,0 +1,6 @@
+{
+  "name": "Tip Calculator App",
+  "description": "A pixel-perfect, accessible, and responsive Frontend Mentor Tip Calculator (Splitter) solution built with HTML, CSS, and interactive calculation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

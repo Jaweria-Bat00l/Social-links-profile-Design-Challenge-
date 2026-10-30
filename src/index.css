@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --color-strong-cyan: hsl(172, 67%, 45%);
+  --color-very-dark-cyan: hsl(183, 100%, 15%);
+  --color-dark-grayish-cyan: hsl(186, 14%, 43%);
+  --color-grayish-cyan: hsl(184, 14%, 56%);
+  --color-light-grayish-cyan: hsl(185, 41%, 84%);
+  --color-very-light-grayish-cyan: hsl(189, 47%, 97%);
+  --color-white: hsl(0, 100%, 100%);
+  --color-error: #e17457;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: var(--color-light-grayish-cyan);
+  color: var(--color-very-dark-cyan);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Hide number input spinners across all browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Tip selection button */
+.tip-btn {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 100%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 0.375rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  cursor: pointer;
+  transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: center;
+  border: 2px solid transparent;
+  outline: none;
+  font-family: 'Space Mono', monospace;
+}
+
+.tip-btn:hover:not(.tip-btn-active) {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tip-btn:focus-visible {
+  border-color: hsl(172, 67%, 45%);
+}
+
+.tip-btn-active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+/* Reset button */
+.reset-btn {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: center;
+  border: none;
+  outline: none;
+  font-family: 'Space Mono', monospace;
+  width: 100%;
+}
+
+.reset-btn:hover:not(:disabled) {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+.reset-btn:disabled {
+  background-color: #0d686d;
+  color: #024f54;
+  opacity: 0.35;
+  cursor: not-allowed;
+}
